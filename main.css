@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Lato:400,500, 600, 700");
+* {
+  box-sizing: border-box; }
+
+body, .text-footer {
+  font-size: 20px;
+  color: #141414;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.58px; }
+
+body {
+  background-color: #FCF7EA; }
+
+.bg-header {
+  background-image: url(img/banner.png);
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 470px;
+  height: auto; }
+
+.bg-footer {
+  background-image: url(img/footer.png);
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 155px;
+  height: auto; }
+
+.bg-characters {
+  background-image: url("img/characters-bg.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 925px;
+  height: auto; }
+
+.navbar-light .navbar-nav .nav-link, .text-title-1, .text-title-2, .text-title-3, .text-title-4, .text-title-5 {
+  font-size: 31px;
+  color: #141414;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.11px;
+  text-transform: uppercase; }
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 38px;
+  letter-spacing: -0.79px;
+  font-weight: 500;
+  text-shadow: 0 2px 5px #000000;
+  line-height: 51px;
+  text-align: center;
+  color: #EFEEDE; }
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link:hover {
+  color: #50CBC1; }
+
+.text-title-2 {
+  color: #FF5EBD; }
+
+.text-title-3 {
+  color: #B3B3B3; }
+
+.text-title-4 {
+  font-size: 36px;
+  letter-spacing: normal;
+  line-height: 59px;
+  font-weight: 500;
+  color: #141414; }
+
+.text-title-5 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.65px; }
+
+.text-title-6 {
+  font-size: 24px;
+  color: #141414;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 59px;
+  letter-spacing: 7px;
+  text-transform: uppercase; }
+
+.text-title-bold {
+  font-size: 28px;
+  color: #141414;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: -0.1px; }
+
+.text-link {
+  font-size: 28px;
+  color: #FF5EBD;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.58px;
+  text-transform: uppercase; }
+
+.text-subscribe {
+  font-size: 25px;
+  color: #141414;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: -0.58px; }
+
+.text-footer {
+  color: #EFEEDE;
+  letter-spacing: -0.42px; }
+
+.btn.btn-primary,
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:visited,
+.btn.btn-primary:focus, .c-button, .c-button:hover {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  height: 60px;
+  line-height: 47px;
+  letter-spacing: -0.58px;
+  white-space: pre-wrap;
+  color: #fff;
+  background-color: #FF5EBD;
+  border-color: #FF5EBD !important;
+  align-items: center;
+  border-radius: 0px;
+  text-transform: uppercase; }
+
+.form-control {
+  border-radius: 0rem;
+  border: none;
+  height: 82px;
+  text-transform: uppercase;
+  font-size: 38px;
+  color: #141414;
+  letter-spacing: -0.58px;
+  font-family: "Oswald", sans-serif; }
+
+.c-button, .c-button:hover {
+  height: 82px;
+  line-height: 70px; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #B3B3B3 !important; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #B3B3B3 !important; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #B3B3B3 !important; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #B3B3B3 !important; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #B3B3B3 !important; }
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #B3B3B3; }
+
+@media (max-width: 991px) {
+  .c-txt-ctr {
+    text-align: center !important; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:400,500, 600, 700');
+
+$font-stack-1: 'Lato', sans-serif;
+$font-stack-2: 'Oswald', sans-serif;
+$clr-yellow: #EFEEDE;
+$clr-black: #141414;
+$clr-grey: #B3B3B3;
+$clr-link: #315890;
+$clr-white: #fff;
+$clr-pink: #FF5EBD;
+$crl-link: #50CBC1;
+$bg-color: #FCF7EA;
+
+
+* { box-sizing: border-box;}
+
+%text-shared {
+    font-size: 20px;
+    color: $clr-black;
+    font-family: $font-stack-1;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.58px;
+}
+
+body {
+    @extend %text-shared;
+    background-color: $bg-color;
+}
+
+.bg-header {
+    background-image: url(img/banner.png);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 470px;
+    height: auto;
+}
+
+.bg-footer {
+    background-image: url(img/footer.png);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 155px;
+    height: auto;
+}
+
+.bg-characters {
+    background-image: url('img/characters-bg.png');
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 925px;
+    height: auto;
+}
+
+%text-shared-1 {
+    font-size: 31px;
+    color: $clr-black;
+    font-family: $font-stack-2;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.11px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    @extend %text-shared-1;
+    font-size: 38px;
+    letter-spacing: -0.79px;
+    font-weight: 500;
+    text-shadow: 0 2px 5px #000000;
+    line-height: 51px;
+    text-align: center;
+    color: $clr-yellow;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link:hover {color: $crl-link;}
+
+.text-title-1 {@extend %text-shared-1;}
+.text-title-2 {@extend %text-shared-1; color: $clr-pink; }
+.text-title-3 {@extend %text-shared-1; color: $clr-grey; }
+.text-title-4 {
+    @extend %text-shared-1;
+    font-size: 36px;
+    letter-spacing: normal;
+    line-height: 59px;
+    font-weight: 500;
+    color: $clr-black;
+}
+.text-title-5 {
+    @extend %text-shared-1;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.65px}
+
+.text-title-6 {
+    font-size: 24px;
+    color: $clr-black;
+    font-family: $font-stack-1;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.text-title-bold {
+    font-size: 28px;
+    color: $clr-black;
+    font-family: $font-stack-1;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: -0.1px;
+}
+
+.text-link {
+    font-size: 28px;
+    color: $clr-pink;
+    font-family: $font-stack-1;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.58px;
+    text-transform: uppercase;
+}
+
+.text-subscribe {
+    font-size: 25px;
+    color: $clr-black;
+    font-family: $font-stack-1;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: -0.58px;
+}
+
+.text-footer {
+    @extend %text-shared;
+    color: $clr-yellow;
+    letter-spacing: -0.42px;
+}
+
+
+%text-btn-share {
+    font-family: $font-stack-2;
+    font-weight: 500;
+    font-size: 28px;
+    height: 60px;
+    line-height: 47px;
+    letter-spacing: -0.58px;
+    white-space: pre-wrap;
+    color: $clr-white;
+    background-color: $clr-pink;
+    border-color: $clr-pink!important;
+    align-items: center;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+.btn.btn-primary,
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:visited,
+.btn.btn-primary:focus {
+    @extend %text-btn-share;
+}
+
+.form-control{
+    border-radius: 0rem;
+    border: none;
+    height: 82px;
+    text-transform: uppercase;
+    font-size: 38px;
+    color: $clr-black;
+    letter-spacing: -0.58px;
+    font-family: $font-stack-2;
+}
+.c-button, .c-button:hover {
+    @extend %text-btn-share;
+    height: 82px;
+    line-height: 70px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $clr-grey!important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $clr-grey!important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $clr-grey!important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $clr-grey!important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $clr-grey!important;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color: $clr-grey;
+}
+
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+
+    .c-txt-ctr {text-align: center!important;}
+
+}
+
+@media (max-width: 767px) {
+
+}
