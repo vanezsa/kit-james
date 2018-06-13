@@ -28,6 +28,12 @@ body {
     background-color: $bg-color;
 }
 
+a, a:hover {
+     @extend %text-shared;
+    letter-spacing: -0.42px;
+    color: $clr-pink;
+}
+
 .bg-header {
     background-image: url(img/banner.png);
     background-position: inherit;
@@ -52,6 +58,15 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 925px;
+    height: auto;
+}
+
+.bg-characters-sm {
+    background-image: url('img/bg-characters-sm.png');
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 295px;
     height: auto;
 }
 
@@ -106,6 +121,14 @@ body {
     text-transform: uppercase;
 }
 
+.text-title-7 {
+    @extend %text-shared-1;
+     font-size: 36px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: -0.75px;
+}
+
 .text-title-bold {
     font-size: 28px;
     color: $clr-black;
@@ -138,6 +161,21 @@ body {
     @extend %text-shared;
     color: $clr-yellow;
     letter-spacing: -0.42px;
+}
+
+.text-quote {
+    @extend %text-shared;
+    color: $crl-link;
+    font-weight: 700;
+}
+
+.text-quote-1 {
+    @extend %text-shared;
+    color: $crl-link;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -0.46px;
+    line-height: 28px;
 }
 
 

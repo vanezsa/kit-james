@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box; }
 
-body, .text-footer {
+body, a, a:hover, .text-footer, .text-quote, .text-quote-1 {
   font-size: 20px;
   color: #141414;
   font-family: "Lato", sans-serif;
@@ -12,6 +12,10 @@ body, .text-footer {
 
 body {
   background-color: #FCF7EA; }
+
+a, a:hover {
+  letter-spacing: -0.42px;
+  color: #FF5EBD; }
 
 .bg-header {
   background-image: url(img/banner.png);
@@ -37,7 +41,15 @@ body {
   min-height: 925px;
   height: auto; }
 
-.navbar-light .navbar-nav .nav-link, .text-title-1, .text-title-2, .text-title-3, .text-title-4, .text-title-5 {
+.bg-characters-sm {
+  background-image: url("img/bg-characters-sm.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 295px;
+  height: auto; }
+
+.navbar-light .navbar-nav .nav-link, .text-title-1, .text-title-2, .text-title-3, .text-title-4, .text-title-5, .text-title-7 {
   font-size: 31px;
   color: #141414;
   font-family: "Oswald", sans-serif;
@@ -86,6 +98,12 @@ body {
   letter-spacing: 7px;
   text-transform: uppercase; }
 
+.text-title-7 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: -0.75px; }
+
 .text-title-bold {
   font-size: 28px;
   color: #141414;
@@ -114,6 +132,17 @@ body {
 .text-footer {
   color: #EFEEDE;
   letter-spacing: -0.42px; }
+
+.text-quote {
+  color: #50CBC1;
+  font-weight: 700; }
+
+.text-quote-1 {
+  color: #50CBC1;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: -0.46px;
+  line-height: 28px; }
 
 .btn.btn-primary,
 .btn.btn-primary:hover,
