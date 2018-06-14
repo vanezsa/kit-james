@@ -29,7 +29,7 @@ body {
 }
 
 a, a:hover {
-     @extend %text-shared;
+    @extend %text-shared;
     letter-spacing: -0.42px;
     color: $clr-pink;
 }
@@ -94,7 +94,7 @@ a, a:hover {
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link:hover {color: $crl-link;}
 
 .text-title-1 {@extend %text-shared-1;}
-.text-title-2 {@extend %text-shared-1; color: $clr-pink; }
+.text-title-2 {@extend %text-shared-1; color: $clr-pink; line-height: 37px; }
 .text-title-3 {@extend %text-shared-1; color: $clr-grey; }
 .text-title-4 {
     @extend %text-shared-1;
@@ -123,7 +123,7 @@ a, a:hover {
 
 .text-title-7 {
     @extend %text-shared-1;
-     font-size: 36px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 33px;
     letter-spacing: -0.75px;
@@ -178,6 +178,23 @@ a, a:hover {
     line-height: 28px;
 }
 
+.text-characters {
+    @extend %text-shared;
+    font-size: 22px;
+    letter-spacing: -0.64px;
+    line-height: 28px;
+}
+
+%text-characters{
+    font-family: $font-stack-2;
+    font-size: 28px;
+    letter-spacing: -0.58px;
+    line-height: 33px;  
+}
+.text-characters-title {
+    @extend %text-characters;
+    text-transform: uppercase;
+}
 
 %text-btn-share {
     font-family: $font-stack-2;
@@ -217,6 +234,23 @@ a, a:hover {
     height: 82px;
     line-height: 70px;
 }
+
+.c-toggler.navbar-toggler {
+    border-color: rgb(80,203,193);
+}
+.c-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(80,203,193, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-pills .nav-link {
+    @extend %text-characters;
+    color: $clr-black;
+}
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    @extend %text-characters;
+    color: $crl-link;
+}
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: $clr-grey!important;
 }
@@ -237,17 +271,21 @@ a, a:hover {
     color: $clr-grey;
 }
 
+.c-margin { margin-top: 150px;}
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199px) {
+    .c-margin { margin-top: 100px;}
 }
 
 @media (max-width: 991px) {
-
+    .c-margin { margin-top: 180px;}
     .c-txt-ctr {text-align: center!important;}
+    .pr-5 {padding-right: 0rem!important;}
 
 }
 
-@media (max-width: 767px) {
+
+@media(max-width:767px){
 
 }

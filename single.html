@@ -16,16 +16,16 @@
         <div class="container-fluid bg-header">
             <nav class="navbar container navbar-expand-lg navbar-light pt-4 justify-content-center">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="c-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav">
-                        <li class="nav-item active pr-5">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item pr-5">
-                            <a class="nav-link" href="books.html">Books</a>
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active pr-5">
+                            <a class="nav-link" href="single.html">Books</a>
                         </li>
                         <li class="nav-item pr-5">
                             <a class="nav-link" href="about.html">About Kit</a>
@@ -40,14 +40,14 @@
                 </div>
             </nav>
 
-            <div class="text-center">
+            <div class="text-center c-margin pb-5">
                 <img src="img/kit-james.svg" alt="sheryl-logo" class="img-fluid pt-5 mt-5">
             </div>
         </div>
 
         <div class="container mt-5">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <img src="img/reality-barks-book-single.png" alt="reality-barks-book-single" class="img-fluid">
                     <div class="pt-4 pb-5">
                         <a href="#" class="btn btn-block btn-primary"><img src="img/shopping-bag.svg" alt="cart" class="pr-3">BUY NOW</a>
@@ -60,15 +60,15 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 offset-lg-1">
+                <div class="col-sm-12 col-md-6 offset-md-1 col-lg-6 offset-lg-1">
                     <div class="text-title-7 pt-5 mt-2">
                         <p>REALITY  BARKS </p>
                     </div>
                     <div class="row pt-4">
-                        <div class="col-lg-2">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2">
                             <img src="img/quote.svg" alt="quote">
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10">
                             <div class="text-quote">
                                 <p><span class="font-italic">‘For a dog, there are few forbidden pleasures to match luxuriating in the plushy nestle of their owners’ dirty and discarded, but still rather attractively smelly, underwear.’</span><br>
                                     –Elliott
@@ -93,13 +93,58 @@
         </div>
 
         <div class="container-fluid bg-characters-sm mt-5">
-            <div class="container pt-3">
-                <div class="text-center text-title-6 pt-5">
-                    <p>SNIPPETS AND FREEBIES</p>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 pt-5">
+                        <div class="text-characters-title">
+                            <p>Meet characters by Kit James</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 col-lg-10 pb-5 pt-5">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-elliot-tab" data-toggle="pill" href="#pills-elliot" role="tab" aria-controls="pills-elliot" aria-selected="true">Elliot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-spike-tab" data-toggle="pill" href="#pills-spike" role="tab" aria-controls="pills-spike" aria-selected="false">Spike</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-mitzi-tab" data-toggle="pill" href="#pills-mitzi" role="tab" aria-controls="pills-mitzi" aria-selected="false">Mitzi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-marc-tab" data-toggle="pill" href="#pills-marc" role="tab" aria-controls="pills-marc" aria-selected="false">Marc</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-howie-tab" data-toggle="pill" href="#pills-howie" role="tab" aria-controls="pills-howie" aria-selected="false">Howie</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active text-characters" id="pills-elliot" role="tabpanel" aria-labelledby="pills-elliot-tab">
+                                <p>How promotion excellent curiosity yet attempted happiness. Considered an invitation do introduced sufficient understood instrument it. Assurance yet bed was improving furniture man. </p>
+                                <a href="#"><span class="font-weight-bold">Spike is from the Reality Barks series, see the book </span><img src="img/arrow.svg" alt="arrow"></a>
+                            </div>
+                            <div class="tab-pane fade text-characters" id="pills-spike" role="tabpanel" aria-labelledby="pills-spike-tab">
+                                <p>How promotion excellent curiosity yet attempted happiness. Considered an invitation do introduced sufficient understood instrument it. Assurance yet bed was improving furniture man. </p>
+                                <a href="#"><span class="font-weight-bold">Spike is from the Reality Barks series, see the book </span><img src="img/arrow.svg" alt="arrow"></a>
+                            </div>
+                            <div class="tab-pane fade text-characters" id="pills-mitzi" role="tabpanel" aria-labelledby="pills-mitzi-tab">
+                                <p>How promotion excellent curiosity yet attempted happiness. Considered an invitation do introduced sufficient understood instrument it. Assurance yet bed was improving furniture man. </p>
+                                <a href="#"><span class="font-weight-bold">Spike is from the Reality Barks series, see the book </span><img src="img/arrow.svg" alt="arrow"></a></div>
+                            <div class="tab-pane fade text-characters" id="pills-marc" role="tabpanel" aria-labelledby="pills-marc-tab">
+                                <p>How promotion excellent curiosity yet attempted happiness. Considered an invitation do introduced sufficient understood instrument it. Assurance yet bed was improving furniture man. </p>
+                                <a href="#"><span class="font-weight-bold">Spike is from the Reality Barks series, see the book </span><img src="img/arrow.svg" alt="arrow"></a>
+                            </div>
+                            <div class="tab-pane fade text-characters" id="pills-howie" role="tabpanel" aria-labelledby="pills-howie-tab">
+                                <p>How promotion excellent curiosity yet attempted happiness. Considered an invitation do introduced sufficient understood instrument it. Assurance yet bed was improving furniture man. </p>
+                                <a href="#"><span class="font-weight-bold">Spike is from the Reality Barks series, see the book </span><img src="img/arrow.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
 
         <div class="container pb-3">
             <div class="row pt-4">
