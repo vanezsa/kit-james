@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:400,500, 600, 700');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato|Germania+One:400,500, 600, 700');
 
 $font-stack-1: 'Lato', sans-serif;
 $font-stack-2: 'Oswald', sans-serif;
+$font-stack-3: 'Germania One', cursive;
 $clr-yellow: #EFEEDE;
 $clr-black: #141414;
 $clr-grey: #B3B3B3;
@@ -39,7 +40,7 @@ a, a:hover {
     background-position: inherit;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 470px;
+    min-height: 457px;
     height: auto;
 }
 
@@ -196,6 +197,22 @@ a, a:hover {
     text-transform: uppercase;
 }
 
+%text-shared-2 {
+    font-size: 28px;
+    color: $clr-black;
+    font-family: $font-stack-3;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.58px;
+    text-transform: uppercase;
+}
+.text-snippets-title, .text-book-title {
+     @extend %text-shared-2;
+}
+
+.text-clr-pink { @extend %text-shared-2; color: $clr-pink;}
+.text-clr-grey { @extend %text-shared-2; color: $clr-grey;}
+
 %text-btn-share {
     font-family: $font-stack-2;
     font-weight: 500;
@@ -233,6 +250,7 @@ a, a:hover {
     @extend %text-btn-share;
     height: 82px;
     line-height: 70px;
+    white-space: pre-wrap;
 }
 
 .c-toggler.navbar-toggler {
@@ -251,6 +269,9 @@ a, a:hover {
     @extend %text-characters;
     color: $crl-link;
 }
+
+footer a:hover{text-decoration: none;}
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: $clr-grey!important;
 }
@@ -274,11 +295,24 @@ a, a:hover {
 .c-margin { margin-top: 150px;}
 .c-margin-1 {margin-top: -7px;}
 .c-margin-2 {margin-left: 50px; margin-right: 43px;}
+.c-margin-3 {margin-top: 40px;}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.page-numbers, .page-numbers:hover {
+    font-family: $font-stack-3;
+    font-size: 28px;
+}
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199px) {
     .c-margin { margin-top: 100px;}
     .c-margin-2 {margin-left: 50px; margin-right: 10px;}
+    .c-margin-3 {margin-top: 0px;}
 }
 
 @media (max-width: 991px) {
@@ -297,4 +331,5 @@ a, a:hover {
 
 @media(max-width:575px) {
     .c-margin-2 {margin-left: 0px;}
+    .c-text, .c-text:hover { font-size: 22px;}
 }

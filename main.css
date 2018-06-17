@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Lato:400,500, 600, 700");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Lato|Germania+One:400,500, 600, 700");
 * {
   box-sizing: border-box; }
 
@@ -22,7 +22,7 @@ a, a:hover {
   background-position: inherit;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 470px;
+  min-height: 457px;
   height: auto; }
 
 .bg-footer {
@@ -159,6 +159,21 @@ a, a:hover {
 .text-characters-title {
   text-transform: uppercase; }
 
+.text-snippets-title, .text-book-title, .text-clr-pink, .text-clr-grey {
+  font-size: 28px;
+  color: #141414;
+  font-family: "Germania One", cursive;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.58px;
+  text-transform: uppercase; }
+
+.text-clr-pink {
+  color: #FF5EBD; }
+
+.text-clr-grey {
+  color: #B3B3B3; }
+
 .btn.btn-primary,
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
@@ -190,7 +205,8 @@ a, a:hover {
 
 .c-button, .c-button:hover {
   height: 82px;
-  line-height: 70px; }
+  line-height: 70px;
+  white-space: pre-wrap; }
 
 .c-toggler.navbar-toggler {
   border-color: #50cbc1; }
@@ -204,6 +220,9 @@ a, a:hover {
 .nav-pills .nav-link.active {
   background-color: transparent;
   color: #50CBC1; }
+
+footer a:hover {
+  text-decoration: none; }
 
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
@@ -239,13 +258,28 @@ a, a:hover {
   margin-left: 50px;
   margin-right: 43px; }
 
+.c-margin-3 {
+  margin-top: 40px; }
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0; }
+
+.page-numbers, .page-numbers:hover {
+  font-family: "Germania One", cursive;
+  font-size: 28px; }
+
 @media (max-width: 1199px) {
   .c-margin {
     margin-top: 100px; }
 
   .c-margin-2 {
     margin-left: 50px;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+
+  .c-margin-3 {
+    margin-top: 0px; } }
 @media (max-width: 991px) {
   .c-margin {
     margin-top: 180px; }
@@ -271,6 +305,9 @@ a, a:hover {
     margin-right: 0px; } }
 @media (max-width: 575px) {
   .c-margin-2 {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+
+  .c-text, .c-text:hover {
+    font-size: 22px; } }
 
 /*# sourceMappingURL=main.css.map */
