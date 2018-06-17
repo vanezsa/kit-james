@@ -25,6 +25,16 @@ a, a:hover {
   min-height: 457px;
   height: auto; }
 
+.bg-books {
+  background-image: url(img/bg-books.png);
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px; }
+
 .bg-footer {
   background-image: url(img/footer.png);
   background-position: inherit;

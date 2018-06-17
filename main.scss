@@ -44,6 +44,18 @@ a, a:hover {
     height: auto;
 }
 
+.bg-books {
+    background-image: url(img/bg-books.png);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+
 .bg-footer {
     background-image: url(img/footer.png);
     background-position: inherit;
@@ -207,7 +219,7 @@ a, a:hover {
     text-transform: uppercase;
 }
 .text-snippets-title, .text-book-title {
-     @extend %text-shared-2;
+    @extend %text-shared-2;
 }
 
 .text-clr-pink { @extend %text-shared-2; color: $clr-pink;}
